@@ -96,6 +96,8 @@ p {
 
 .gender {
   display: inline-flex;
+  position: relative;
+  left: 0.5%;
   box-sizing: border-box;
 }
 
@@ -103,10 +105,13 @@ p {
   border: 1px solid #242527;
   border-radius: 3px;
   padding-right: 10%;
-  width: 118px;
+  width: 113px;
   color: white;
   font-weight: bold;
   font-size: 16px;
+}
+.gender option {
+  text-align: center;
 }
 .gender input {
   position: relative;
@@ -129,9 +134,28 @@ p {
   font-size: 20px;
   padding-bottom: 20px;
 }
-/*@media (max-width: 600px) {
+footer {
+  position: absolute;
+  bottom: 1px;
+  background-color: #000000;
+}
+.info {
+  margin: 0%;
+  width: auto;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.info [id="up"],
+[id="down"] {
+  word-spacing: 10px;
+}
+
+@media (max-width: 600px) {
   #main {
+    height: 100px;
     width: 100%;
     float: none;
   }
-}*/
+}
